@@ -2,7 +2,7 @@
   "name": "parvaz-hidaya",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "/.netlify/functions/generate",
   "description": "Parvaz Hidaya - gentle Islamic story generator",
   "main": "index.js",
   "scripts": {
@@ -13,12 +13,11 @@
     "start-backend": "node src/backend/server.js"
   },
   "dependencies": {
-    "abort-controller": "^3.0.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.6.1",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "git": "^0.1.5",
-    "node-fetch": "^2.7.0",
+    "node-fetch": "^2.6.7",
     "path": "^0.12.7",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
