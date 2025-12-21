@@ -1,0 +1,42 @@
+{
+  "name": "parvaz-hidaya",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "description": "Parvaz Hidaya - gentle Islamic story generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start-backend": "node src/backend/server.js"
+  },
+  "dependencies": {
+    "abort-controller": "^3.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "git": "^0.1.5",
+    "node-fetch": "^2.7.0",
+    "path": "^0.12.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-script": "^2.0.5",
+    "react-scripts": "^0.0.0",
+    "to": "^0.2.9",
+    "web-vitals": "^5.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
