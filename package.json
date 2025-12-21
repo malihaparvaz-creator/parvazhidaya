@@ -2,28 +2,19 @@
   "name": "parvaz-hidaya",
   "version": "0.1.0",
   "private": true,
-  "proxy": "/.netlify/functions/generate",
-  "description": "Parvaz Hidaya - gentle Islamic story generator",
-  "main": "index.js",
+  "description": "Parvaz Hidaya - gentle Islamic support assistant",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start-backend": "node src/backend/server.js"
+    "eject": "react-scripts eject"
   },
   "dependencies": {
-    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "git": "^0.1.5",
     "node-fetch": "^2.6.7",
-    "path": "^0.12.7",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
-    "react-script": "^2.0.5",
     "react-scripts": "^5.0.1",
-    "to": "^0.2.9",
     "web-vitals": "^5.1.0"
   },
   "browserslist": {
