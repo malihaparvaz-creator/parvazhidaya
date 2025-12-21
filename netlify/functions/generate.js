@@ -1,16 +1,8 @@
 require("dotenv").config();
-const fetch = require("node-fetch");
-
 /* ===================== TIMEOUT ===================== */
-function withTimeout(ms) {
-  const controller = new AbortController();
-  setTimeout(() => controller.abort(), ms);
-  return controller;
-}
 
 async function safeFetch(url, options, name) {
-  const controller = withTimeout(8000);
-  const res = await fetch(url, { ...options, signal: controller.signal });
+  const res = await fetch(url, options);
 
   if (!res.ok) {
     const t = await res.text();
@@ -19,6 +11,7 @@ async function safeFetch(url, options, name) {
 
   return res.json();
 }
+
 
 function clean(text) {
   if (!text || typeof text !== "string") return null;
