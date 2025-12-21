@@ -1,6 +1,5 @@
 require("dotenv").config();
 const fetch = require("node-fetch");
-const AbortController = global.AbortController || require("abort-controller");
 
 /* ===================== TIMEOUT ===================== */
 function withTimeout(ms) {
