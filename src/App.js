@@ -283,8 +283,10 @@ export default function App() {
             </div>
           </div>
         )}
-        <footer style={{ marginTop: 50, paddingTop: 20, paddingBottom: 20, borderTop: '1px solid rgba(212, 165, 116, 0.3)', textAlign: 'center' }}>
-          <p style={{ margin: 0, color: '#9d8b7e', fontSize: 13, fontWeight: 400, letterSpacing: '0.3px' }}>{t.madeBy}</p>
+        <footer style={{ position: 'fixed', left: 0, right: 0, bottom: 12, display: 'flex', justifyContent: 'center', zIndex: 9999, pointerEvents: 'none' }}>
+          <div style={{ pointerEvents: 'none', background: 'rgba(255,255,255,0.86)', padding: '6px 12px', borderRadius: 12, boxShadow: '0 6px 20px rgba(0,0,0,0.08)', border: '1px solid rgba(212,165,116,0.12)' }}>
+            <p style={{ margin: 0, color: '#6b5c4c', fontSize: 13, fontWeight: 400, letterSpacing: '0.3px' }}>{t.madeBy}</p>
+          </div>
         </footer>
       </div>
     </div>
