@@ -109,9 +109,7 @@ export default function App() {
     setStory('');
     setWisdom('');
     try {
-      const lastItem = history.length > 0 ? history[history.length - 1] : null;
-      const contextualPrompt = lastItem ? `Referring to your previous message: "${lastItem.emotion}". The response was: ${lastItem.story_text}. Now, ${input}` : input;
-      const { story: s, wisdom: w } = await generateFromAPI({ promptText: contextualPrompt, languageCode: language });
+      const { story: s, wisdom: w } = await generateFromAPI({ promptText: input, languageCode: language });
       setStory(s);
       setWisdom(w);
       if (opts.saveToHistory) {
